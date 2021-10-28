@@ -1,0 +1,27 @@
+.DashBoardBox {
+  border: 0;
+  width: 80%;
+  height: 50vh;
+  border-radius: 10px;
+  background-color: rgb(129, 149, 151);
+}
+.DashBoardBox h3 {
+  color: white;
+}
+.DashBoardBox button {
+  margin-top: 80px;
+  padding: 10px;
+  width: 30%;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: lightgrey;
+}
+.DashBoardBox button:hover {
+  background-color: white;
+}
+@media screen and (min-width: 600px) {
+  .DashBoardBox {
+    width: 360px;
+  }
+}

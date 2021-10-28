@@ -2,6 +2,7 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useAuth } from "../../Providers/Auth";
+import './style.css'
 
 interface UserData {
   email: string;
@@ -27,7 +28,7 @@ const Login = () => {
     <form className="InputsCamp" onSubmit={handleSubmit(Login)}>
       <input placeholder="Email" type="text" {...register("email")} />
       <input placeholder="Senha" type="password" {...register("password")} />
-      <button type="submit">Enviar</button>
+      <button type="submit">Entrar</button>
     </form>
   );
 };

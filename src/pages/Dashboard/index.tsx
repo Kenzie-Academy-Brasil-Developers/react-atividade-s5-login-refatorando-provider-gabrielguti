@@ -1,10 +1,10 @@
 import { useAuth } from "../../Providers/Auth";
-
+import "./style.css";
 const Dashboard = () => {
   const { Logout } = useAuth();
   return (
-    <div>
-      <p>Dashboard</p>
+    <div className = 'DashBoardBox'>
+      <h3>Dashboard</h3>
       <button onClick={Logout}>Sair</button>
     </div>
   );
